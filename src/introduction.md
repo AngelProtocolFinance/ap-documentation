@@ -30,7 +30,7 @@ Each section will cover the overview of the setup, players and contracts involve
 ## Typographical Conventions Used
 
 ### Code Snippets
-```
+```javascript
 function testAllTheThings() {
     // some 1337 code here...
 }
