@@ -1,0 +1,707 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>AST Documentation | Angel Protocol</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="section-lines.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Basics of Angel Protocol Contracts</li><li class="chapter-item expanded "><a href="overview/overview-of-key-contracts.html"><strong aria-hidden="true">1.</strong> Overview of Key Contracts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="overview/key-contracts-registrar.html"><strong aria-hidden="true">1.1.</strong> Registrar Contract</a></li><li class="chapter-item expanded "><a href="overview/key-contracts-accounts.html"><strong aria-hidden="true">1.2.</strong> Accounts Contract</a></li></ol></li><li class="chapter-item expanded "><a href="overview/types-of-endowments.html"><strong aria-hidden="true">2.</strong> Type of Endowments</a></li><li class="chapter-item expanded "><a href="overview/endowment-balance-accounting.html"><strong aria-hidden="true">3.</strong> Endowment Balance Accounting</a></li><li class="chapter-item expanded "><a href="overview/fund-flows-into-around-outof-angel-protocol.html"><strong aria-hidden="true">4.</strong> Fund flows into, around, and out of Angel Protocol</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started with ASTs</li><li class="chapter-item expanded "><a href="basics/creating-an-ast.html"><strong aria-hidden="true">5.</strong> Creating An AST</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="basics/creation-message-arguments.html"><strong aria-hidden="true">5.1.</strong> Creation Message Arguments</a></li></ol></li><li class="chapter-item expanded "><a href="basics/ast-multsigs.html"><strong aria-hidden="true">6.</strong> AST Multsigs</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="basics/how-does-multisig-work.html"><strong aria-hidden="true">6.1.</strong> How Does a Multisig Work?</a></li><li class="chapter-item expanded "><a href="basics/managing-multisig-members.html"><strong aria-hidden="true">6.2.</strong> Managing The Members Of A Multisig</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Advanced AST Functionality</li><li class="chapter-item expanded "><a href="advanced/getting-funds-into-and-out-of-an-ast.html"><strong aria-hidden="true">7.</strong> Getting Funds Into And Out Of An AST</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="advanced/deposits.html"><strong aria-hidden="true">7.1.</strong> Taking Deposits/Contributions</a></li><li class="chapter-item expanded "><a href="advanced/withdraws.html"><strong aria-hidden="true">7.2.</strong> Placing Withdraws</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">8.</strong> Modifying the configuration parameters of an AST</div></li><li class="chapter-item expanded "><div><strong aria-hidden="true">9.</strong> Investing and redeeming funds held in an AST</div></li><li class="chapter-item expanded affix "><li class="part-title">Contracts and Wallet Addresses</li><li class="chapter-item expanded "><a href="references/wallet-contract-addresses-testnet.html"><strong aria-hidden="true">10.</strong> Testnet - Polygon</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">11.</strong> Mainnet - Polygon</div></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="references/misc-reference-links.html">References</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">AST Documentation | Angel Protocol</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p>Welcome! I am excited you’ve decided to learn more about the Angel Smart Treasury (AST) from Angel Protocol. This document aims to help new develpers to understand the functionality and power offered by Angel Protocol’s smart contract platform so that they can quickly start building on top of us to deliver new and innovative financial solutions. </p>
+<h2 id="eli5-what-is-the-purpose-of-an-ast"><a class="header" href="#eli5-what-is-the-purpose-of-an-ast">ELI5: What is the purpose of an AST?</a></h2>
+<p>An AST provides you with the tools to fundraise, coordinate, and invest capital in a transparent and frictionless manner. ASTs connect donors and investors with non-profits, social enterprises and other changemakers around the world. It’s a customizable, powerful, web3 infrastructure available in minutes!</p>
+<h2 id="who-should-read-this-guide"><a class="header" href="#who-should-read-this-guide">Who should read this guide?</a></h2>
+<p>This guide was written primarily with developers and tech-savy users in mind. It will help if you come in with an understanding of how the Polygon blockchain (or a similar EVM-based blockchain such as  Ethereum) and Solidity smart contracts work. We’ll be diving deeper into the technical aspects of how to use the Angel Protocol smart contracts directly here. </p>
+<p>If you’re looking for a higher level overview of the Angel Protocol ecosystem you can check out that guide here [LINK]. We also provide a UI-focused guide for users that do not want or need to directly interact with the smart contracts and would prefer to use the provided web application for managing their AST. </p>
+<p>That said there’s a lot to learned in the coming pages that will help you better understand and use our platform. :) Stick with it and you might be surprised! </p>
+<h2 id="how-to-read-this"><a class="header" href="#how-to-read-this">How to read this?</a></h2>
+<p>This guide is written to provide explainations and details, along with code snippets and contract interfaces that would be commonly encountered when using an AST. These scenarios cover things like:
+• Creating an AST
+• How to use your AST’s multisig
+• Depositing and withdrawing funds from an AST</p>
+<p><strong>Coming soon!</strong></p>
+<ul>
+<li>Updating and modifying the configuration parameters of an AST</li>
+<li>Investing and redeeming funds to/from Angel Protocol Strategies</li>
+</ul>
+<p>We’ve ordered the first sections to quickly orient users to the core logic and structures at play in the Angel Protocol contracts and Endowments that are important to understand first, we then dive into the AST creation process and the basics of using an AST multisig. With those foundations in place we build upon that, covering the various day-to-day scenarios that AST members can expect to encounter. These latter sections can be treated as a reference guide rather than something that needs to be read cover-to-cover.</p>
+<p>Each section will cover the overview of the setup, players and contracts involved, any important logic points or considerations. We’ll also look at relevent code snippets for the involved endpoints as well as any important structs as we go. </p>
+<h2 id="typographical-conventions-used"><a class="header" href="#typographical-conventions-used">Typographical Conventions Used</a></h2>
+<h3 id="code-snippets"><a class="header" href="#code-snippets">Code Snippets</a></h3>
+<pre><code class="language-javascript">function testAllTheThings() {
+    // some 1337 code here...
+}
+</code></pre>
+<h3 id="important-points"><a class="header" href="#important-points">Important Points</a></h3>
+<blockquote>
+<p>⚠️ <strong>Heads Up:</strong> Important points will called out like this!</p>
+</blockquote>
+<h2 id="diagram-symbols-used"><a class="header" href="#diagram-symbols-used">Diagram Symbols Used</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Symbol</th><th>Description</th></tr></thead><tbody>
+<tr><td><img src="./assets/symbols/smart-contract.png" alt="Smart Contract" title="Smart Contract" /></td><td>Represents a smart contract on-chain. The &quot;name&quot; of the contract will always appear first in bold, along with an Address.</td></tr>
+<tr><td><img src="./assets/symbols/multisig-tx.png" alt="Multisig Transaction" title="Multisig Transaction" /></td><td>Represents a single multisig contract transaction. These transactions are dependent on confirmation thresholds being reached to be executed.</td></tr>
+<tr><td><img src="./assets/symbols/contract-endpoint.png" alt="Interactive Endpoint" title="Interactive Endpoint" /></td><td>Represents an interactive endpoint on a smart contract. Messages always point at the blue receptor and outward flowing arrows represent downstream actions.</td></tr>
+<tr><td><img src="./assets/symbols/eoa-wallet.png" alt="EOA Wallet" title="EOA Wallet" /></td><td>Represents an EVM EOA wallet.</td></tr>
+<tr><td><img src="./assets/symbols/checkpoint.png" alt="Logic Checkpoint" title="Contract Logic Checkpoint" /></td><td>Represents a critical decision step in the contract logic.</td></tr>
+<tr><td><img src="./assets/symbols/tokens.png" alt="Tokens" title="Tokens" /></td><td>This is money. 😄 It is used to represent the flow of tokens and resulting balances in a contract or wallet.</td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="overview-of-key-contracts"><a class="header" href="#overview-of-key-contracts">Overview of Key Contracts</a></h1>
+<p>There are two important contracts that you <strong>must</strong> be aware of as a developer looking to understand the Angel Protocol ecosystem. These are:</p>
+<ul>
+<li>Registrar Contract</li>
+<li>Accounts Contract</li>
+</ul>
+<p>We’ll cover each of them in turn in the next sections.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="registrar-contract"><a class="header" href="#registrar-contract">Registrar Contract</a></h1>
+<p>This contract laregly serves as THE source of truth for all other Angel Protocol contracts on a given blockchain. It holds a large number of values in its storage struct that most other contracts will query to get the correct values for their own operations. It’s owned and controlled by the Angel Protocol Team’s Admin multisig contract. Only this multisig can modify this contracts values. </p>
+<p>The full config struct of the Registrar contract (as returned from a query to the getConfig endpoint):</p>
+<pre><code class="language-javascript">struct Config {
+    address owner; // AP TEAM MULTISIG
+    address applicationsReview;
+    address indexFundContract;
+    address accountsContract;
+    address treasury;
+    address subdaoGovCode;
+    address subdaoCw20TokenCode;
+    address subdaoBondingTokenCode;
+    address subdaoCw900Code;
+    address subdaoDistributorCode;
+    address subdaoEmitter;
+    address donationMatchCode;
+    address donationMatchCharitesContract;
+    address donationMatchEmitter;
+    AngelCoreStruct.SplitDetails splitToLiquid;
+    address haloToken;
+    address haloTokenLpContract;
+    address govContract;
+    address collectorAddr;
+    uint256 collectorShare;
+    address charitySharesContract;
+    AngelCoreStruct.AcceptedTokens acceptedTokens;
+    address fundraisingContract;
+    AngelCoreStruct.RebalanceDetails rebalance;
+    address swapsRouter;
+    address multisigFactory;
+    address multisigEmitter;
+    address charityProposal;
+    address lockedWithdrawal;
+    address proxyAdmin;
+    address usdcAddress;
+    address wethAddress;
+    address cw900lvAddress;
+}
+</code></pre>
+<p>Aside from managing the various contract addresses and wallet variables, the Registrar is also responsible for the curration of approved “Strategies” (ie. What ASTs invest their funds into) and “Nework Information” about other external chains that Angel Protocol has Strategy Vaults deployed on. 
+The last important thing the Registrar handles is the management of the protocol level “Fees” that can be setup and applied when Endowments take certain actions like withdrawing funds from the protocol or when a harvest of Strategy vaults takes place.</p>
+<p>Overall, the Registrar contract is a critically important contract to be aware of as you’re reading and understanding the code. It’s everywhere, and yet it’s not a contract you will ever, if at all, need to interact with directly. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="accounts-contract-diamond"><a class="header" href="#accounts-contract-diamond">Accounts Contract (Diamond)</a></h1>
+<p>This diamond contract is where all of the core business logic that governs all ASTs lives. If you are unfamiliar with what a Diamond is please stop and read over the <a href="https://eips.ethereum.org/EIPS/eip-2535">EIP-2535 specification</a> to get an understanding and then come back here. Don’t worry we’ll wait! :) Everything else beyond this point will make a lot more sense after that.</p>
+<p>The Accounts contract is responsible for:</p>
+<ul>
+<li>Tracking all existing Endowment accounts in the Angel Protocol ecosystem, their current status, and their configuration settings</li>
+<li>Managing the internal ledger for all Endowment balances</li>
+<li>Correctly applying logic for inbound deposits and outbound withdraws</li>
+<li>Providing the infrastructure to allow Endowment owners to make investments and redemptions to/from any Angel Protocol Strategy vaults, whether those are on the same chain or a different chain entirely</li>
+<li>Allow Endowment owners the ability to update their Configuration settings and manage things like permissions and control over changing various parameters</li>
+</ul>
+<p>The other important concepts to wrap your head around, before we dive deeper into the code, is the distinction between the different types of Endowments, as well as the internal, accounting setup for all Endowment balances. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="types-of-endowments"><a class="header" href="#types-of-endowments">Types of Endowments</a></h1>
+<p>Angel Protcol has two types of Endowments at the smart contract level: Charity Endowments &amp; Normal Endowments. The internal representation for an EndowmentType in the contracts is an enum:</p>
+<pre><code class="language-javascript">enum EndowmentType {
+    Charity,
+    Normal,
+    None
+}
+</code></pre>
+<p>Charity Endowments are specialized Endowments reserved only for vetted and verified Non-Profit Organisations. These are outside the scope of this guide, but it’s important to know they exist for when you see them mentioned throughout the logic in the smart contracts codebase. Normal Endowments are  ASTs. So when you see references to “Normal” Endowments in the codebase, just think AST and you’ll be okay. We’ll use AST thoughout this guide to avoid any confusion. AST Endowments have far greater flexibility in their configurations optionality and their management capabilities. They are the v2 of the Charity Endowments.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="endowment-balance-accounting"><a class="header" href="#endowment-balance-accounting">Endowment Balance Accounting</a></h1>
+<p>Regardless of their Type, all Endowments recorded in the Accounts contract have a Locked Account and an Liquid Account balance. Internally in the contracts this is represented by an enum AccountType:</p>
+<pre><code class="language-javascript">enum AccountType {
+    Locked,
+    Liquid,
+    None
+}
+</code></pre>
+<p>The Locked portion represents the balance that is...well locked and cannot be withdrawn. It’s helpful to think of this as the “endowment” portion of your account, the part that is set aside to be invested and grow un-distributed. The Liquid portion can be thought of like a current (or checking) bank account where there are little to no restriction on how much, to whom, or when money can be taken out of it. </p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="fund-flows-into-around-and-out-of-angel-protocol"><a class="header" href="#fund-flows-into-around-and-out-of-angel-protocol">Fund flows into, around, and out of Angel Protocol</a></h1>
+<figure>
+    <img src="overview//assets/diagrams/basic-fund-flows.png"
+         alt="Basic Flow of Funds in Angel Protocol">
+	<figcaption>High-level view of how funds can enter, exit, and move while within Angel Protocol.</figcaption>
+</figure>
+<p>All funds enter Angel Protocol via deposits into an Endowment’s uninvested “bucket” of funds, which we refer to in the contracts as “tokens-on-hand”. Theses buckets exist in a locked and liquid version. All investments and redemptions are carried out from and return back to the respective tokens-on-hand bucket from which they originated. All AST withdraws are pulled from the Liquid tokens-on-hand bucket only. </p>
+<p>For invested locked funds, harvest events are where a certain percentage of the earnings generated by those funds are unlocked and moved into the liquid-version of the same strategy, freeing them up to be redeemed to a liquid tokens-on-hand bucket and withdraw if desired. This is how Angel Protocol Endowments throw off an income stream for ASTs. </p>
+<figure>
+    <img src="overview//assets/diagrams/lock-liq-fund-flows.png"
+         alt="Locked/Liquid Flow of Funds in Angel Protocol">
+	<figcaption>Detailed flow of funds into, around and out of Angel Protocol taking into account Locked vs Liquid.</figcaption>
+</figure>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="creating-an-ast"><a class="header" href="#creating-an-ast">Creating An AST</a></h1>
+<figure>
+    <img src="basics//assets/diagrams/ast-creation.png"
+         alt="Creation of an AST">
+	<figcaption>Flow of events and summary of the contracts involved in the creation of an AST Endowment on the Accounts contract. This example sets up Endowment #2, with a single owner multisig that does not require explicit execution.</figcaption>
+</figure>
+<p>Any user who wishes to do so may create an AST. To do so you must use the createEndowment function on the Accounts diamond contract facet “AccountsCreateEndowment”. This endpoint expects an extensive configuration message that lays out all of the settings and parameters for the new AST. We’ll cover the function itself and the logic the message arguments and what they are for. </p>
+<p>The <code>createEndowment</code> function payload on the Accounts contract facet <code>AccountsCreateEndowment</code> expects a single argument struct like so: </p>
+<pre><code class="language-javascript">struct CreateEndowmentRequest {
+        address owner;
+        bool withdrawBeforeMaturity;
+        uint256 maturityTime;
+        string name;
+        AngelCoreStruct.Categories categories;
+        uint256 tier;
+        AngelCoreStruct.EndowmentType endow_type;
+        string logo;
+        string image;
+        address[] cw4_members;
+        bool kycDonorsOnly;
+        AngelCoreStruct.Threshold cw3Threshold;
+        AngelCoreStruct.Duration cw3MaxVotingPeriod;
+        address[] whitelistedBeneficiaries;
+        address[] whitelistedContributors;
+        uint256 splitMax;
+        uint256 splitMin;
+        uint256 splitDefault;
+        AngelCoreStruct.EndowmentFee earningsFee;
+        AngelCoreStruct.EndowmentFee withdrawFee;
+        AngelCoreStruct.EndowmentFee depositFee;
+        AngelCoreStruct.EndowmentFee aumFee;
+        AngelCoreStruct.DaoSetup dao;
+        bool createDao;
+        uint256 proposalLink;
+        AngelCoreStruct.SettingsController settingsController;
+        uint256 parent;
+        address[] maturityWhitelist;
+        bool ignoreUserSplits;
+        AngelCoreStruct.SplitDetails splitToLiquid;
+    }
+</code></pre>
+<p>We’ll breakdown what each of these arguments is used for, grouped by their area of application, and also how different choices for these will impact the created AST in terms of functionality.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="creation-message-arguments"><a class="header" href="#creation-message-arguments">Creation Message Arguments</a></h1>
+<h2 id="endowment-owner"><a class="header" href="#endowment-owner">Endowment Owner</a></h2>
+<p><code>address owner;</code>
+This field should usually be set as the message sender EOA, as it will only be used temporarily until the AST Multisig is created and set as the true owner. </p>
+<h2 id="endowment-type"><a class="header" href="#endowment-type">Endowment Type</a></h2>
+<p><code>AngelCoreStruct.EndowmentType endow_type;</code>
+This field expects and EndowmentType enum:</p>
+<pre><code class="language-javascript">enum EndowmentType {
+        Charity,
+        Normal,
+        None
+    }
+</code></pre>
+<p>It should always be set as &quot;Normal&quot; for AST creation message. </p>
+<h2 id="endowment-tier"><a class="header" href="#endowment-tier">Endowment Tier</a></h2>
+<p><code>uint256 tier;</code>
+This field should always be set as 0 for AST creation messages. This field is used exclusively by Charity endowments. </p>
+<h2 id="maturity-time"><a class="header" href="#maturity-time">Maturity Time</a></h2>
+<pre><code class="language-javascript">bool withdrawBeforeMaturity;
+uint256 maturityTime;
+</code></pre>
+<p>These fields are responsible for controlling when the AST Endowment will mature at and whether or not withdraws are possible before this maturity date. Both of these fields can only be set at the time of instantiation. </p>
+<p>If <code>withdrawBeforeMaturity == true</code>, then funds will be be able to be withdrawn before the maturity date, if set to false, then funds are locked until maturity is set (if ever). </p>
+<p>The maturityTime field, if non-zero, sets the time that the Endowment will mature at. If <code>0</code> the endowment effectively has no maturity date (indefinate). </p>
+<h2 id="categories-and-un-sdgs"><a class="header" href="#categories-and-un-sdgs">Categories and UN SDGs</a></h2>
+<p><code>AngelCoreStruct.Categories categories;</code>
+This field expects a Categories struct which lays out the UN SDGs and General categories that apply to an Endowment:</p>
+<pre><code class="language-javascript">struct Categories {
+    uint256[] sdgs;
+    uint256[] general;
+}
+</code></pre>
+<p>SDGs are used mostly with Charity endowments only, though they could be used by an AST if desired, though having at least 1 SDG set is not a requirement for them, unlike with Charity endowments. General categories is a open, flexible system thin which AST owners can set integer values on chain for interally defined categories. This General category might be useful for users that have many ASTs or those that have my sub-AST (child ASTs) that want to group them by internal classifiers. </p>
+<h2 id="basic-endowment-info-strings"><a class="header" href="#basic-endowment-info-strings">Basic Endowment Info Strings</a></h2>
+<pre><code class="language-javascript">string name;
+string logo;
+string image;
+</code></pre>
+<p>These fields are simple, informational string vaules that will help identify your AST endowment on-chain and can be used by those who are not using suplemental database storages for AST information. </p>
+<ul>
+<li>Name: The name of your AST</li>
+<li>Logo: A URL string that points to your AST’s logo image</li>
+<li>Image: A URL string that points to your AST’s banner/suplemental image</li>
+</ul>
+<h2 id="kyc-required"><a class="header" href="#kyc-required">KYC Required</a></h2>
+<p><code>bool kycDonorsOnly;</code>
+If set to true, the AST is stating its preference for only recieving funds from KYC’d donors/contibutors. This is something that would be read by and enforced from the frontend environment, as there’s currently no real way to do this on-chain today.</p>
+<h2 id="multisig-initial-configs"><a class="header" href="#multisig-initial-configs">MultiSig Initial Configs</a></h2>
+<pre><code class="language-javascript">address[] cw4_members;
+AngelCoreStruct.Threshold cw3Threshold;
+AngelCoreStruct.Duration cw3MaxVotingPeriod;
+</code></pre>
+<p>The above argments control the starting vaules for the AST Endowment’s MultiSig.</p>
+<ul>
+<li>cw4_members: A list of EVM addresses that should be setup as the starting owners/members of the AST Endowment multisig</li>
+<li>cw3Threshold: This argument expects a Threshold struct which lays out the following: </li>
+</ul>
+<pre><code class="language-javascript">struct Threshold {
+    ThresholdEnum enumData;
+    ThresholdData data;
+}
+</code></pre>
+<p><code>ThresholdEnum</code> struct specifies the type of threshold used:</p>
+<pre><code class="language-javascript">enum ThresholdEnum {
+    AbsoluteCount,
+    AbsolutePercentage,
+    ThresholdQuorum
+}
+</code></pre>
+<p>ThresholdData struct is where the relevent values for the above threshold type are passed. When not applicable, a 0 value can be passed:</p>
+<pre><code class="language-javascript">struct ThresholdData {
+    uint256 weight;
+    uint256 percentage;
+    uint256 threshold;
+    uint256 quorum;
+}
+</code></pre>
+<h2 id="whitelists"><a class="header" href="#whitelists">Whitelists</a></h2>
+<pre><code class="language-javascript">address[] whitelistedBeneficiaries;
+address[] whitelistedContributors;
+address[] maturityWhitelist;
+</code></pre>
+<p>These values setup the allow lists for what restrictions, if any, will exist for those wallets that will be beneficiaries of or contributors to the AST. If an empty array is passed it is assumed that there should be NO restrictions on that field (ie. Any wallet address will be allowed). 
+The maturityWhitelist field is the set of addresses that can access the AST funds at the time of maturity. It is distinct from the other two whitelists here, which apply only while the AST is not yet mature. </p>
+<h2 id="split-logic"><a class="header" href="#split-logic">Split Logic</a></h2>
+<pre><code class="language-javascript">uint256 splitMax;
+uint256 splitMin;
+uint256 splitDefault;
+bool ignoreUserSplits;
+AngelCoreStruct.SplitDetails splitToLiquid;
+</code></pre>
+<p>???</p>
+<h2 id="custom-fees"><a class="header" href="#custom-fees">Custom Fees</a></h2>
+<pre><code class="language-javascript">AngelCoreStruct.EndowmentFee earningsFee;
+AngelCoreStruct.EndowmentFee withdrawFee;
+AngelCoreStruct.EndowmentFee depositFee;
+AngelCoreStruct.EndowmentFee aumFee;
+</code></pre>
+<p>???</p>
+<h2 id="settings-controller"><a class="header" href="#settings-controller">Settings Controller</a></h2>
+<p><code>AngelCoreStruct.SettingsController settingsController;</code>
+This field expects a <code>SettingsController</code> struct which lays out on-chain enforced rules as to whom can make changes to which AST endowment fields and settings:</p>
+<pre><code class="language-javascript">struct SettingsController {
+    SettingsPermission endowmentController;
+    SettingsPermission strategies;
+    SettingsPermission whitelistedBeneficiaries;
+    SettingsPermission whitelistedContributors;
+    SettingsPermission maturityWhitelist;
+    SettingsPermission maturityTime;
+    SettingsPermission profile;
+    SettingsPermission earningsFee;
+    SettingsPermission withdrawFee;
+    SettingsPermission depositFee;
+    SettingsPermission aumFee;
+    SettingsPermission kycDonorsOnly;
+    SettingsPermission name;
+    SettingsPermission image;
+    SettingsPermission logo;
+    SettingsPermission categories;
+    SettingsPermission splitToLiquid;
+    SettingsPermission ignoreUserSplits;
+}
+</code></pre>
+<p>As you can see from the struct shape and contents, the <code>SettingsController</code> struct is a set of fields which hold <code>SettingsPermissions</code> struct with have all the relevent permissions details encoded:</p>
+<pre><code class="language-javascript">struct SettingsPermission {
+    bool ownerControlled;
+    bool govControlled;
+    bool modifiableAfterInit;
+    Delegate delegate;
+}
+</code></pre>
+<h2 id="parent--child-endowments"><a class="header" href="#parent--child-endowments">Parent / Child Endowments</a></h2>
+<p><code>uint256 parent;</code>
+If you have an existing AST Endowment that will be the parent/owner of a sub-AST or child AST Endowment, this field is where that parent AST Endowment ID should be placed. The time of creation  is the only opportunity at the present time where this field can be set. If no parent is needed, as will be the case for most AST users, simply pass a 0 value here.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ast-multsigs"><a class="header" href="#ast-multsigs">AST Multsigs</a></h1>
+<p>Multisig contracts are commonplace in web3. They allow groups of users (the owners or members as they are often refered to as) to do things like approve transactions of shared assets held by their multisig contract and in general allow for better security of funds and addresses replacing users when they lose access to or have their signing wallet compromised. There a many different implementations of multisig contracts, but they ususally share core similarities.</p>
+<h2 id="multisig-transactions"><a class="header" href="#multisig-transactions">Multisig Transactions</a></h2>
+<p>A transaction must collect signatures of approval from the members of the multisig. Just like in the &quot;real-world&quot;, where voter petitions to a governing body need to have some thousands of signatures before it can be read before parliment, so too must a multisig transaction collect certain a number of signatures from its owners. The number of signatures that is required for a proposed transaction to have before it can be executed on-chain is called the threshold. </p>
+<p>Once a transaction has collected signatures above the threshold, it can be executed by any valid wallet address on-chain. Execution is not limited to the member addresses themselves, which is useful when it comes to other contracts or scripts being able to execute transactions. </p>
+<h2 id="want-to-go-deeper"><a class="header" href="#want-to-go-deeper">Want to go deeper?</a></h2>
+<p>If you're interested in learning more about multisig contracts in depth we can recommend the following artciles and resources for additional reading: </p>
+<ul>
+<li><a href="https://www.coindesk.com/learn/what-is-a-multisig-wallet/" target="_blank">What Is a Multisig Wallet? (Coindesk)</a> is a beginner friendly overview of multisig contracts</li>
+<li><a href="https://shivanisb10.medium.com/multisig-contracts-in-ethereum-ffd8a1a9a025" target="_blank">Multisig Contracts in Ethereum (Medium)</a> is a more advanced overview of multisig conttracts in EMVs using Solidity with discussions around on-chain vs off-chain signing of transactions</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="how-does-a-multisig-work"><a class="header" href="#how-does-a-multisig-work">How Does a Multisig Work?</a></h1>
+<figure>
+    <img src="basics//assets/diagrams/multisigs-voting.png"
+         alt="Basic overview of AST Multsig">
+	<figcaption>Shows the various steps and players involved in using an AST multisig contract, from initial transaction submission, confirmations, to the final execution of the payload.</figcaption>
+</figure>
+<p>All actions taking place with a multisig follow the same flow: </p>
+<ol>
+<li>Propose a transaction</li>
+<li>Acheive a passing level threshold of confimations</li>
+<li>Execute the proposed transaction to the destination contract</li>
+</ol>
+<h2 id="submitting-a-transaction"><a class="header" href="#submitting-a-transaction">Submitting a transaction</a></h2>
+<p>Everything starts with a multisig member submitting a transaction for consideration for execution by the other members of a multisig. The output of a successful submission would be the resulting transaciton ID.</p>
+<blockquote>
+<p>⚠️ <strong>NOTE:</strong> Take care to record this returned Endowment ID! It will be important for all members to interact with and sign a transaction and to lookup the status of a transaction. </p>
+</blockquote>
+<p>This message and args would look something like:</p>
+<pre><code class="language-javascript">submitTransaction(&quot;A short title&quot;, &quot;description of the proposed transaction&quot;, &quot;0x..1003&quot;, 0, &lt;withdraw msg as binary&gt;)
+</code></pre>
+<h2 id="confirming-a-transaction"><a class="header" href="#confirming-a-transaction">Confirming a transaction</a></h2>
+<p>In order to confirm a pending multisig transaction members of the multisig must confirm the transaction. Members have several options available to them with regards to exercising their voting powers on a multisig contract for which they must submit the following messages, each time passing the transaction ID along as the sole argument:</p>
+<h3 id="confirm-a-transaciton-approval-vote-for-execution"><a class="header" href="#confirm-a-transaciton-approval-vote-for-execution">Confirm a Transaciton (approval vote for execution)</a></h3>
+<p><code>confirmTransaction(uint256 transactionId)</code></p>
+<h3 id="revoke-a-confirmation-recind-a-confirmation-previously-submitted-for-a-transaciton"><a class="header" href="#revoke-a-confirmation-recind-a-confirmation-previously-submitted-for-a-transaciton">Revoke a confirmation (recind a confirmation previously submitted for a transaciton)</a></h3>
+<p><code>revokeConfirmation(uint256 transactionId)</code></p>
+<p>Once a transaction has aquired enough confirmations to meet the passing threshold level set it is ready for the final step: Execution!</p>
+<h2 id="executing-a-passing-transaction"><a class="header" href="#executing-a-passing-transaction">Executing a passing transaction</a></h2>
+<p>The hard work of gathering consensous amongst multisig members for a proposed transaction has been carried out. Now the time has come to execute the transaciton. This requires a single submission, which can be subitted by any valid EOA wallet, and will pass so long as:</p>
+<ol>
+<li>The threshold for a transaction has been met</li>
+<li>The data payload is valid and does not cause downstream errors that would cause the transaction to fail.</li>
+</ol>
+<p>The execution message is very simple and looks like this: 
+<code>executeTransaction(uint256 transactionId)</code></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="managing-the-members-of-a-multisig"><a class="header" href="#managing-the-members-of-a-multisig">Managing The Members Of A Multisig</a></h1>
+<figure>
+    <img src="basics//assets/diagrams/multisigs-member-mgmnt.png"
+         alt="Managing Multisig Members">
+	<figcaption>Shows how AST multisig contract member can manage themselves without any central mediation. Here we see an example of removing a member from the AST multig's owners list.</figcaption>
+</figure>
+<p>Managing internal affairs of an AST multisig is the same process as any other transaction. The only difference is really that the destination is set as the multisig contract itself. This sort of setup is used for many common tasks such as:</p>
+<ul>
+<li>
+<p>Adding a new member (owner)
+<code>addOwner(address owner)</code></p>
+</li>
+<li>
+<p>Removing a member (owner)
+<code>removeOwner(address owner)</code></p>
+</li>
+<li>
+<p>Replacing an existing member (owner) with a new one. This is useful for when an existing member loses access to their wallet or has it compromised and needs to change to a new wallet.
+<code>replaceOwner(address owner, address newOwner)</code></p>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="getting-funds-into-and-out-of-an-ast"><a class="header" href="#getting-funds-into-and-out-of-an-ast">Getting Funds Into And Out Of An AST</a></h1>
+<p>Now that we've covered setting up your AST, it's time to get into the important stuff. The money!</p>
+<div class="tenor-gif-embed" data-postid="14103986" data-share-method="host" data-aspect-ratio="1.87" data-width="100%"><a href="https://tenor.com/view/show-me-the-money-tom-cruise-gif-14103986">Show Me The Money Tom Cruise GIF</a>from <a href="https://tenor.com/search/show+me+the+money-gifs">Show Me The Money GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+<p>In order to be useful, ASTs need to be able to receive funds from the outside world. We refer to these as deposits on the contracts. Deposits are open to the world by default, but can be restricted to a specific whitelisted set of contributor addresses, if so desired.</p>
+<p>Inversely, ASTs need to send money out into the world from it's pool of tokens held on hand in their Liquid balances. This could be for things like paying a supplier for services, paying employees salaries, or many other things. Like deposits, withdraws are set to be capabile of being sent to any address, though like with deposits we've added logic to allow this to be restricted to a finite list of beneficiaries.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="taking-depositscontributions"><a class="header" href="#taking-depositscontributions">Taking Deposits/Contributions</a></h1>
+<figure>
+    <img src="advanced//assets/diagrams/deposit.png"
+         alt="Deposits into an AST">
+	<figcaption>Basic logic is illustrated, showing the flow of funds from a donor/contributor that wishes to deposit some funds into an AST.</figcaption>
+</figure>
+<p>This is accomplished with the send of a valid deposit message to the Accounts contract any wallet. We will assume there are no restrictions on the wallets that can interact with the deposit endpoints for the sake of this example. Valid deposit message are supposed to be an ERC20 that exists in the Registrar contract’s approved tokens list. It looks like this:</p>
+<pre><code class="language-javascript">function depositERC20(
+    AccountMessages.DepositRequest memory curDetails,
+    address curTokenaddress,
+    uint256 curAmount
+) external;
+</code></pre>
+<p>As you can see we would need to pass along the amount to deposit, the token address of the deposit token, and a <code>DepositRequest</code> struct. That struct is rather simple and provides the Accounts contract further information about splits the user desires and which Endowment ID to credit the deposit to. It looks like this:</p>
+<pre><code class="language-javascript">struct DepositRequest {
+        uint256 id;
+        uint256 lockedPercentage;
+        uint256 liquidPercentage;
+    }
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="placing-withdraws"><a class="header" href="#placing-withdraws">Placing Withdraws</a></h1>
+<figure>
+    <img src="advanced//assets/diagrams/withdraw.png"
+         alt="Withdraw from an AST">
+	<figcaption>Shows a liquid withdraw proposal and execution for an AST from it's AST multisig.</figcaption>
+</figure>
+<blockquote>
+<p>⚠️ <strong>NOTE:</strong> All withdraws from an AST come out of the Liquid Balance of Tokens on Hand. Locked Withdraws are NOT allowed from ASTs until the maturity time has been reached, hence the name.</p>
+</blockquote>
+<p>The shape of a withdraw message is as follows:</p>
+<pre><code class="language-javascript">function withdraw(
+    uint256 curId,
+    AngelCoreStruct.AccountType acctType,
+    address curBeneficiary,
+    address[] memory curTokenaddress,
+    uint256[] memory curAmount
+)
+</code></pre>
+<p>In order to perform a withdraw:</p>
+<ol>
+<li>An endowment member creates a transaction on the endowment multisig using the submitTransaction endpoint, with the destination address as the Accounts contract, a value set as 0 and the calldata for withdraw with liquid option. </li>
+<li>Other endowment members sign the transaction on multisig identified by transaction id.</li>
+<li>Once (n/2+1)[the default, unless changed] signers sign transaction, it can be executed. However, this will happen automatically if the <code>require_execution</code> is set to false in the multisig config.</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="polygon-mumbai--contracts-and-wallets"><a class="header" href="#polygon-mumbai--contracts-and-wallets">Polygon (Mumbai) -Contracts and Wallets</a></h1>
+<h2 id="contract-addresses"><a class="header" href="#contract-addresses">Contract Addresses</a></h2>
+<h3 id="registrar"><a class="header" href="#registrar">Registrar</a></h3>
+<ul>
+<li>registrarImplementation: <code>0xD0DF2E81A44A8d5191C4Aaba74B1fA6b1429F729</code></li>
+<li>registrarProxy: <code>0xf9ae9FEb01B382C87d391F04a021fae312264CA</code></li>
+</ul>
+<h3 id="accounts"><a class="header" href="#accounts">Accounts</a></h3>
+<ul>
+<li>diamond: <code>0xf725Ff6235D53dA06Acb4a70AA33206a1447D55</code></li>
+</ul>
+<h3 id="endowmentmultisigaddress"><a class="header" href="#endowmentmultisigaddress">EndowmentMultiSigAddress</a></h3>
+<ul>
+<li>EndowmentMultiSigEmitterProxy: <code>0xC0c1d1659f88c0D0737069354b93874cBebfdfD7</code></li>
+<li>EndowmentMultiSigEmitterImplementation: <code>0x6472BC08F58D989483665F8Da7999516Ec7dF489</code></li>
+<li>MultiSigWalletFactory: <code>0x59802CEB7B8af8F0619A74Db0fC70e880ca9f47D</code></li>
+<li>MultiSigWalletImplementation: <code>0x7D8F4C57582abBbfa977541d740908b983A3952</code></li>
+</ul>
+<h3 id="tokens"><a class="header" href="#tokens">Tokens</a></h3>
+<ul>
+<li>USDC: <code>0xaBCe32FBA4C591E8Ea5A5f711F7112dC08BCee74</code></li>
+<li>Token: <code>0x06499E212Ce9F9D4a2147e82242F137c5e32f8C</code></li>
+</ul>
+<h3 id="other-multisigs-non-endowment"><a class="header" href="#other-multisigs-non-endowment">Other MultiSigs (non-Endowment)</a></h3>
+<ul>
+<li>ApplicationsMultiSigProxy: <code>0x1edC050B5d84cbB0cA0b56356f3F7307efcd50Fb</code></li>
+<li>APTeamMultiSigProxy: <code>0xC26Ac43b14ebCbff5029792052aF3e4DF3233902</code></li>
+<li>ApplicationMultisigImplementation: <code>0x4bCbb6eec52d710e0f699Fe5f4D4920E0627B6C1</code></li>
+<li>APTeamMultisigImplementation: <code>0x308AD7B20A0070D848a551E70C7C47d0e9673DA</code></li>
+</ul>
+<h3 id="charity-application"><a class="header" href="#charity-application">Charity Application</a></h3>
+<ul>
+<li>CharityApplicationProxy: <code>0x3516F641df05537a903D655844736eE991E69902</code></li>
+<li>CharityApplicationImplementation: <code>0xB5c18b5A3a5E325f25133Df7D026E9fC47F235a</code></li>
+</ul>
+<h3 id="swap-router"><a class="header" href="#swap-router">Swap Router</a></h3>
+<ul>
+<li>swapRouterProxy: <code>0x0c00F32a3603ba39f6D1eACD21a0D60d2c58675c</code></li>
+<li>swapRouterImplementation: <code>0x430E6044d849f6506F36d2A50Ce41924E559EbD</code></li>
+</ul>
+<h3 id="index-fund"><a class="header" href="#index-fund">Index Fund</a></h3>
+<ul>
+<li>indexFundProxy: <code>0xba4A7987e34BFDCb1D10e1318934dBce1024bDC8</code></li>
+<li>indexFundImplementation: <code>0xc8C19c0cc539F827BDD6CAF216bf6f3EB1166bD</code></li>
+</ul>
+<h3 id="subdao-emitter"><a class="header" href="#subdao-emitter">SubDao Emitter</a></h3>
+<ul>
+<li>SubdaoEmitterProxyAddress: <code>0x026Db89632da750c0b2C136253208262A680E527</code></li>
+<li>SubdaoEmitterImplementationAddress: <code>0xa145F2fDC3e2774C70Dc247d804986C91e878d4</code></li>
+</ul>
+<h3 id="halo-implementations"><a class="header" href="#halo-implementations">Halo Implementations</a></h3>
+<ul>
+<li>DonationMatchImplementation: <code>0xDfE663881Dd23d4B0d32899fE43E6347F21fF41f</code></li>
+</ul>
+<h3 id="donation-match"><a class="header" href="#donation-match">Donation Match</a></h3>
+<ul>
+<li>DonationMatchProxy: <code>0x8ead0CF0f28a0dF2de0Ac7cFEB1b48dB20619cD7</code></li>
+<li>DonationMatchImplementation: <code>0x89831907835e537Be7818b692482B39815C55FE</code></li>
+</ul>
+<h3 id="subdao"><a class="header" href="#subdao">SubDao</a></h3>
+<ul>
+<li>subDaoImplementation: <code>0x10618938dFD69dA98eB5f4112a4487fAC6b22ef7</code></li>
+<li>subDaoERC20Implementation: <code>0x25E2c69e9775bA8d2c0a38b3212987123b8727eF</code></li>
+<li>subDaoCurveTokenImplementation: <code>0xBdf1fFA5B0357744DE7517d98aDf8dC22c1eF373</code></li>
+<li>IncentivisedVotingLockupImplementation: <code>0x0c7056652736A06d6D90f11B29176DEa7630f14</code></li>
+</ul>
+<h2 id="wallet-addresses"><a class="header" href="#wallet-addresses">Wallet Addresses</a></h2>
+<p><em>None to note at this time</em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="references"><a class="header" href="#references">References</a></h1>
+<h2 id="angel-protocol-github-repos"><a class="header" href="#angel-protocol-github-repos">Angel Protocol GitHub Repos</a></h2>
+<h3 id="this-documentation"><a class="header" href="#this-documentation"><a href="https://github.com/AngelProtocolFinance/ap-documentation">This documentation</a></a></h3>
+<p>See an error? Found a section lacking? Want to see a new area covered for your use case? Feel free to open an issue here for us to work on.</p>
+<h3 id="react-web-app-for-angel-protocol-and-angel-giving"><a class="header" href="#react-web-app-for-angel-protocol-and-angel-giving"><a href="https://github.com/AngelProtocolFinance/angelprotocol-web-app">React Web App for Angel Protocol and Angel Giving</a></a></h3>
+<p>This is a useful repo to familiarize yourself using React JS components to manage wallet signing and interacting with our Angel Protocol smart contracts and AWS APIs. It can even be used to bootstrap your own site with minimal code changes need. <em>More details on this coming soon!</em></p>
+<h3 id="single-page-web-app-for-angel-protocol-causes"><a class="header" href="#single-page-web-app-for-angel-protocol-causes"><a href="https://github.com/AngelProtocolFinance/causes-donation-portal">Single page web app for Angel Protocol causes</a></a></h3>
+<p>This is a template repo that can be cloned and modified to setup a single-page web app for a donation page to your AST. It's best used for specific causes or themed fundraisers. Feel free to reach out on our <a href="https://discord.gg/angelprotocol">Discord</a> for more information about how we can help you get setup with and use this!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
