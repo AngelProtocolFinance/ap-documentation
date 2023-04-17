@@ -17,9 +17,11 @@ This guide is written to provide explainations and details, along with code snip
     • Creating an AST
     • How to use your AST’s multisig
     • Depositing and withdrawing funds from an AST
-Coming soon!
-    • Updating and modifying the configuration parameters of an AST
-    • Investing and redeeming funds to/from Angel Protocol Strategies 
+
+**Coming soon!**
+
+- Updating and modifying the configuration parameters of an AST
+- Investing and redeeming funds to/from Angel Protocol Strategies
 
 We’ve ordered the first sections to quickly orient users to the core logic and structures at play in the Angel Protocol contracts and Endowments that are important to understand first, we then dive into the AST creation process and the basics of using an AST multisig. With those foundations in place we build upon that, covering the various day-to-day scenarios that AST members can expect to encounter. These latter sections can be treated as a reference guide rather than something that needs to be read cover-to-cover.  
 
@@ -27,14 +29,14 @@ Each section will cover the overview of the setup, players and contracts involve
 
 ## Typographical Conventions Used
 
-**Code**
+### Code Snippets
 ```
 function testAllTheThings() {
     // some 1337 code here...
 }
 ```
 
-**Important Points**
+### Important Points
 > ⚠️ **Heads Up:** Important points will called out like this!
 
 
