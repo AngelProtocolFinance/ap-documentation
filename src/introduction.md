@@ -14,12 +14,11 @@ That said there’s a lot to learned in the coming pages that will help you bett
 
 ## How to read this?
 This guide is written to provide explainations and details, along with code snippets and contract interfaces that would be commonly encountered when using an AST. These scenarios cover things like:
-    • Creating an AST
-    • How to use your AST’s multisig
-    • Depositing and withdrawing funds from an AST
+- Creating an AST
+- How to use your AST’s multisig
+- Depositing and withdrawing funds from an AST
 
 **Coming soon!**
-
 - Updating and modifying the configuration parameters of an AST
 - Investing and redeeming funds to/from Angel Protocol Strategies
 
