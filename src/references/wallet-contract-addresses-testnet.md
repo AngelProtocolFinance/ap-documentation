@@ -1,4 +1,4 @@
-# Polygon (Mumbai) -Contracts and Wallets
+# Polygon (Mumbai) - Contracts and Wallets
 
 ## Contract Addresses
 

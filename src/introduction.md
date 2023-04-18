@@ -19,23 +19,24 @@ In the "Technical Documentation" section of this book, we provide explainations 
 - Updating and modifying the configuration parameters of an AST
 - Investing and redeeming funds to/from Angel Protocol Strategies
 
-We’ve ordered the first sections to quickly orient users to the core logic and structures at play in the Angel Protocol contracts and Endowments that are important to understand first, we then dive into the AST creation process and the basics of using an AST multisig. With those foundations in place we build upon that, covering the various day-to-day scenarios that AST members can expect to encounter. These latter sections can be treated as a reference guide rather than something that needs to be read cover-to-cover.  
+We’ve ordered the first sections to quickly orient users to the core logic and structures at play in the Angel Protocol contracts and Endowments that are important to understand first, we then dive into the AST creation process and the basics of using an AST multisig. With those foundations in place we build upon that, covering the various day-to-day scenarios that AST members can expect to encounter. These latter sections can be treated as a reference guide rather than something that needs to be read cover-to-cover.
 
-Each section will cover the overview of the setup, players and contracts involved, any important logic points or considerations. We’ll also look at relevent code snippets for the involved endpoints as well as any important structs as we go. 
+Each section will cover the overview of the setup, players and contracts involved, any important logic points or considerations. We’ll also look at relevent code snippets for the involved endpoints as well as any important structs as we go.
 
 ## Who should read this book?
 
-If you're not technically inclined, you should first read the Functional Documentation section's chapters to get a complete understanding of what Angel Protocol is, what the ASTs can do, and how to work with the existing AngelProtocol.io website UI. 
+If you are _not_ technically inclined, you should first read the [Functional Documentation](./functional/overview/main.md) chapters to get a complete understanding of what Angel Protocol is, what the ASTs can do, and how to work with the existing AngelProtocol.io website UI.
 
-If you are technically savvy or just want to dive deeper the Technical Documentation chapters are for you. These were written primarily with developers and tech-savy users in mind. It will help if you come in with an understanding of how the Polygon blockchain (or a similar EVM-based blockchain such as  Ethereum) and Solidity smart contracts work. We’ll be diving deeper into the technical aspects of how to use the Angel Protocol smart contracts directly here. 
+If you _are_ technically savvy or just want to dive deeper then the [Technical Documentation](./technical/overview/main.md) chapters are for you. These were written primarily with developers and tech-savy users in mind. It will help if you come in with an understanding of how the Polygon blockchain (or a similar EVM-based blockchain such as  Ethereum) and Solidity smart contracts work. We’ll be diving deeper into the technical aspects of how to use the Angel Protocol smart contracts directly here.
 
 If you’re looking for a higher level overview of the Angel Protocol ecosystem you can check out that guide here [LINK]. We also provide a UI-focused guide for users that do not want or need to directly interact with the smart contracts and would prefer to use the provided web application for managing their AST. 
 
-That said there’s a lot to learned in the coming pages that will help you better understand and use our platform. :) Stick with it and you might be surprised! 
+Regardless of the path you chose, there’s a lot to learn in the coming pages that will help you better understand and use our platform. Stick with it and you might be surprised!
 
 ## Typographical Conventions Used
 
 ### Code Snippets
+
 ```javascript
 function testAllTheThings() {
     // some 1337 code here...
