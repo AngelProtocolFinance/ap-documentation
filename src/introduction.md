@@ -3,17 +3,14 @@
 Welcome! I am excited you’ve decided to learn more about the Angel Smart Treasury (AST) from Angel Protocol. This document aims to help new develpers to understand the functionality and power offered by Angel Protocol’s smart contract platform so that they can quickly start building on top of us to deliver new and innovative financial solutions. 
 
 ## ELI5: What is the purpose of an AST?
+
 An AST provides you with the tools to fundraise, coordinate, and invest capital in a transparent and frictionless manner. ASTs connect donors and investors with non-profits, social enterprises and other changemakers around the world. It’s a customizable, powerful, web3 infrastructure available in minutes!
 
-## Who should read this guide?
-This guide was written primarily with developers and tech-savy users in mind. It will help if you come in with an understanding of how the Polygon blockchain (or a similar EVM-based blockchain such as  Ethereum) and Solidity smart contracts work. We’ll be diving deeper into the technical aspects of how to use the Angel Protocol smart contracts directly here. 
+## How to read this book?
 
-If you’re looking for a higher level overview of the Angel Protocol ecosystem you can check out that guide here [LINK]. We also provide a UI-focused guide for users that do not want or need to directly interact with the smart contracts and would prefer to use the provided web application for managing their AST. 
+This guide is written to provide explainations and details behind of ASTs and UI guides in our "Functional Documentation". Here we'll walk new users through how they can use our existing site to configure, launch, and manage their AST, all without any code required!
 
-That said there’s a lot to learned in the coming pages that will help you better understand and use our platform. :) Stick with it and you might be surprised! 
-
-## How to read this?
-This guide is written to provide explainations and details, along with code snippets and contract interfaces that would be commonly encountered when using an AST. These scenarios cover things like:
+In the "Technical Documentation" section of this book, we provide explainations and breakdown the code behine ASTs with code snippets and contract interface explainations that would be commonly encountered when using an AST. These scenarios cover things like:
 - Creating an AST
 - How to use your AST’s multisig
 - Depositing and withdrawing funds from an AST
@@ -26,6 +23,16 @@ We’ve ordered the first sections to quickly orient users to the core logic and
 
 Each section will cover the overview of the setup, players and contracts involved, any important logic points or considerations. We’ll also look at relevent code snippets for the involved endpoints as well as any important structs as we go. 
 
+## Who should read this book?
+
+If you're not technically inclined, you should first read the Functional Documentation section's chapters to get a complete understanding of what Angel Protocol is, what the ASTs can do, and how to work with the existing AngelProtocol.io website UI. 
+
+If you are technically savvy or just want to dive deeper the Technical Documentation chapters are for you. These were written primarily with developers and tech-savy users in mind. It will help if you come in with an understanding of how the Polygon blockchain (or a similar EVM-based blockchain such as  Ethereum) and Solidity smart contracts work. We’ll be diving deeper into the technical aspects of how to use the Angel Protocol smart contracts directly here. 
+
+If you’re looking for a higher level overview of the Angel Protocol ecosystem you can check out that guide here [LINK]. We also provide a UI-focused guide for users that do not want or need to directly interact with the smart contracts and would prefer to use the provided web application for managing their AST. 
+
+That said there’s a lot to learned in the coming pages that will help you better understand and use our platform. :) Stick with it and you might be surprised! 
+
 ## Typographical Conventions Used
 
 ### Code Snippets
@@ -36,10 +43,10 @@ function testAllTheThings() {
 ```
 
 ### Important Points
+
 > ⚠️ **Heads Up:** Important points will called out like this!
 
-
-## Diagram Symbols Used
+## Technical Diagram Symbols Used
 
 | Symbol      | Description |
 | ----------- | ----------- |
