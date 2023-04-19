@@ -102,7 +102,10 @@ h6:target::before {
 .content ul { line-height: 1.45em; }
 .content a { text-decoration: none; }
 .content a:hover { text-decoration: underline; }
-.content img, .content video { max-width: 100%; }
+.content img, .content video {
+    max-width: 100%;
+    background: rgb(255,255,255);
+}
 .content .header:link,
 .content .header:visited {
     color: var(--fg);
@@ -200,4 +203,29 @@ kbd {
 
 .result-no-output {
     font-style: italic;
+}
+
+/* CUSTOM CSS */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", Sans-serif;
+}
+
+h1 { border-bottom: 3px solid; }
+
+h1:first-of-type { border-bottom: 0; }
+
+h2 { border-bottom: 1px solid; }
+
+div.badge {
+    background-color: var(--sidebar-bg);
+    border: 0x solid;
+    border-radius: 9999px;
+    padding: 8px 16px 8px 16px;
+    font-size: 1.5em;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.content img#ap-logo {
+    background-color: unset;
 }
