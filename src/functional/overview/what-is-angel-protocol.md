@@ -23,6 +23,6 @@ You don't need to be a blockchain expert to utilize ASTs. Communicating with sma
 
 > ⚠️ **Heads Up:** We have some great technical documentation if you want to go deeper, starting at [Technical Documentation - Introduction](../technical/introduction.md)
 
-![Integrate With Angel Protocol](../../assets/integrate-with-fintech.png "Integrate With Angel Protocol")
+![Integrate With Angel Protocol](../../assets/diagrams/integrate-with-fintech.png "Integrate With Angel Protocol")
 
 With Angel Protocol you can build or embed the ability to invest in tokenized assets & yield, coordinate using decentralized governance, and program trust-less execution in less than 60 minutes. We combine the best of tokenized infrastructure in one powerful but simple product, providing all the benefits of Web3 while abstracting away the complexity.
