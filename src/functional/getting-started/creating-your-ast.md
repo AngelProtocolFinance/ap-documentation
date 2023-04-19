@@ -7,12 +7,12 @@
 
 ## Step 1: Wallet Creation
 
-You’ll need a tokenized asset wallet to interact with your AST. Already have a wallet for tokenized assets? Great, you’re all set! Skip to the next section.
+You will need a tokenized asset wallet to interact with your AST. Already have a wallet for tokenized assets? Great, you are all set! Skip to the next section.
 New to tokenized assets? No problem! You can quickly and easily set up your wallet with simply an email address using Web3Auth wallet.
 
 ## Step 2: About
 
-Once you have your wallet setup, you’re ready to begin creating your AST. In this section you can provide basic information like name and brief description/tagline.
+Once you have your wallet setup, you are ready to begin creating your AST. In this section you can provide basic information like name and brief description/tagline.
 
 ![about](../../assets/screenshots/about-ast.png "about AST Launchpad")
 
@@ -41,7 +41,7 @@ In this section you can choose who is able to deposit (contributors) or withdraw
 
 ## Step 5: Maturity
 
-If you’d like to set a maturity date/action for your AST, you may do so here. This is useful for any situation where you would like to release access of funds to specific beneficiaries at a specific time, such as when setting up trusts. It can also be used as a recovery failsafe by setting up a separate recovery wallet as the beneficiary at a future date.
+If you’d like to set a maturity date/action for your AST, you may do so here. This is useful for any situation where you would like to release access of funds to specific beneficiaries at a specific time, such as when setting up trusts. It can also be used as a recovery fail-safe by setting up a separate recovery wallet as the beneficiary at a future date.
 
 ![maturity](../../assets/screenshots/maturity-ast.png "maturity AST Launchpad")
 
@@ -66,6 +66,6 @@ The final step before finishing creating your AST is reviewing the summary of se
 
 ## Step 9: Success!
 
-Congratulations! You’ve successfully set up your AST & it’s ready immediately for use.
+Congratulations! You have successfully set up your AST & it is ready immediately for use.
 
 ![success](../../assets/screenshots/success-ast.png "success AST Launchpad")

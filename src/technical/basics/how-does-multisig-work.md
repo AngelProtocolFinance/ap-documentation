@@ -34,7 +34,7 @@ In order to confirm a pending multisig transaction members of the multisig must 
 
 `revokeConfirmation(uint256 transactionId)`
 
-Once a transaction has aquired enough confirmations to meet the passing threshold level set it is ready for the final step: Execution!
+Once a transaction has acquired enough confirmations to meet the passing threshold level set it is ready for the final step: Execution!
 
 ## Executing a passing transaction
 

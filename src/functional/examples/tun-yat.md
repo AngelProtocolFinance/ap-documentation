@@ -2,20 +2,20 @@
 
 ![tun-yat](../../assets/examples/tun-yat.png "tun-yat")
 
-### On-chain Agricultural Microloans
+<div class="badge">On-chain Agricultural Microloans</div>
 
-### About
+## About
 
 Tun Yat provides credit facilities for smallholder farmers with limited financing options in Myanmar. Servicing over 5,000 farmers to date Tun Yat is seeking to transparently scale their loan portfolio with the utmost capital efficiency.
 
-### Goals
+## Goals
 
 - Pool funds from around the world given local political and economic challenges
 - Remove middlemen by building on-chain farmer credit profiles to directly connect farmers to funders
 - Invest in curated tokenized assets to cover ongoing OPEX costs
 - Pilot smart-contract based decisions with auto execution of loan decisions
 
-### Parameters
+## Parameters
 
 Tun Yat provides credit facilities for smallholder farmers with limited financing options in Myanmar. Servicing over 5,000 farmers to date Tun Yat is seeking to transparently scale their loan portfolio with the utmost capital efficiency.
 

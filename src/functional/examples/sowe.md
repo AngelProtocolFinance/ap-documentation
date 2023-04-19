@@ -2,19 +2,19 @@
 
 ![sowe](../../assets/examples/sowe.png "sowe")
 
-### On-chain Microfinance
+<div class="badge">On-chain Microfinance</div>
 
-### About
+## About
 
 SOWE and their field partner Yamba Hearts for Uganda empower women to start their own businesses with zero interest loans provided by global donors. SOWE seeks to remove any intermediaries in directly funding women entrepreneurs while also establishing an evergreen fund to offset any loan defaults.
 
-### Goals
+## Goals
 
 - Pool funds from around the world to support local entrepreneurs
 - Embed transparency in loan origination and repayment
 - Create a robust evergreen fund with the automated Investment and Locked features
 
-### Parameters
+## Parameters
 
 **Admin Wallet:** Multi-sig set up consisting of three members from SOWE’s team and two members from Yamba Hearts for Uganda. As the Yamba Hearts for Uganda team works directly with the loan applicants, their vote will be weighted 2:1 compared to SOWE’s team.
 

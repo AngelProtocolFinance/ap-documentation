@@ -1,5 +1,6 @@
-# Basics of Angel Protocol Contracts
+# Angel Protocol Smart Contracts
 
 > **What You Will Learn:** 
-> - How to manage your AST (Decision Center & Whitelists)
-> - Updating settings (Admin Wallet, Donor Verification & Permission)
+> - The different "types" of Endowments
+> - Balances and Accounting with Endowments
+> - How funds flow in Angel Protocol

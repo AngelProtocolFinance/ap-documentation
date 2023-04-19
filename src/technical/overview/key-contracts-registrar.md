@@ -44,4 +44,4 @@ struct Config {
 Aside from managing the various contract addresses and wallet variables, the Registrar is also responsible for the curation of approved “Strategies” (ie. What ASTs invest their funds into) and “Network Information” about other external chains that Angel Protocol has Strategy Vaults deployed on.
 The last important thing the Registrar handles is the management of the protocol level “Fees” that can be setup and applied when Endowments take certain actions like withdrawing funds from the protocol or when a harvest of Strategy vaults takes place.
 
-Overall, the Registrar contract is a critically important contract to be aware of as you’re reading and understanding the code. It’s everywhere, and yet it’s not a contract you will ever really need to interact with directly.
+Overall, the Registrar contract is a critically important contract to be aware of as you’re reading and understanding the code. It is everywhere, and yet it is not a contract you will ever really need to interact with directly.
