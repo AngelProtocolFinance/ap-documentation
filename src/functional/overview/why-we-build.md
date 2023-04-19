@@ -8,7 +8,7 @@
 ## Rooted in Social Impact
 
 We are a decentralized organization rooted in social impact. Decentralized, because the protocol is run and maintained by its token holders. Rooted in social impact, because the protocol is designed to support nonprofit and social impact organizations.
-Angel Giving lit the spark of Angel Protocol, bringing our team together with a passion to change the world for the better. Its purpose is to provide free access to non-custodial on-chain endowments for nonprofits around the world, leveling the playing field and providing a path to financial stability regardless of the organization’s size or location. But we wanted to go further. Angel Protocol’s infrastructure is carefully designed to benefit the nonprofit organizations of Angel Giving. A portion of all protocol fees are redirected to nonprofits on Angel Giving, which means anytime you use Angel Protocol’s infrastructure you’re also funding local changemakers working to improve the world. Win and help win.
+Angel Giving lit the spark of Angel Protocol, bringing our team together with a passion to change the world for the better. Its purpose is to provide free access to non-custodial on-chain endowments for nonprofits around the world, leveling the playing field and providing a path to financial stability regardless of the organization’s size or location. But we wanted to go further. Angel Protocol’s infrastructure is carefully designed to benefit the nonprofit organizations of Angel Giving. A portion of all protocol fees are redirected to nonprofits on Angel Giving, which means anytime you use Angel Protocol’s infrastructure you’re also funding local change-makers working to improve the world. Win and help win.
 
 ## Impact Case Studies
 

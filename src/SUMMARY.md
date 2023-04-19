@@ -13,7 +13,7 @@
 - [Functionality](./functional/functionality/main.md)
 	- [Investments](./functional/functionality/investments.md)
 	- [Profiles]() # coming later!
-	- [Goverenance]() # coming later!
+	- [Governance]() # coming later!
 - [Examples and Use Cases](./functional/examples/main.md)
 	- [Functionality Examples](./functional/examples/functionality-examples.md)
 	- [Current Customer Examples](./functional/examples/current-customer-examples.md)

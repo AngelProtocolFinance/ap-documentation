@@ -1,6 +1,6 @@
 # Why use Angel Protocol?
 
-The tokenization of assets is both revolutionary and inevitable. Significant value, efficiency, and democratization of access are unlocked with the move from traditional to tokenized assets (along with new blue oceans of possibility through programmable, trustless execution). Those who embrace and leverage this technology gain a significant competitive advantage. However, building customized financial products is out of reach for most businesses and individuals:
+The tokenization of assets is both revolutionary and inevitable. Significant value, efficiency, and democratization of access are unlocked with the move from traditional to tokenized assets (along with new blue oceans of possibility through programmable, trust-less execution). Those who embrace and leverage this technology gain a significant competitive advantage. However, building customized financial products is out of reach for most businesses and individuals:
 
 - **Regulation & Intermediaries:** Time-to-market often takes anywhere from 2 to 6 months, or longer if not utilizing a Banking-as-a-Service (BaaS) provider
 - **Development Cost:** Minimum development cost for a new financial product can easily exceed $150K for simple functionality
@@ -22,7 +22,7 @@ You no longer need to invest significant time and resources to build the financi
 ## Cost-leading Pricing Model
 
 We believe in democratizing access to financial opportunity regardless of a person’s wealth or location. Thus, we charge no setup costs, take no cut of incoming contributions, and have no subscription fees. We only win when our customers win, charging 1% on balances (per annum) and 1.5% on withdrawals (of funds leaving Angel Protocol). Simple, transparent, and inclusive.
-We plan to introduce a premium service in the future for those seeking a dedicated account manager, white-glove helpdesk, technical assistance for integration, and help with admin/legal. Currently, the cost is free: <a href="https://angelprotocol.io/talk-to-us/" target="blank">talk to us</a>.
+We plan to introduce a premium service in the future for those seeking a dedicated account manager, white-glove help desk, technical assistance for integration, and help with admin/legal. Currently, the cost is free: <a href="https://angelprotocol.io/talk-to-us/" target="blank">talk to us</a>.
 
 ## Who uses Angel Protocol?
 
@@ -30,7 +30,7 @@ Angel Protocol’s infrastructure is trusted by over 170 organizations around th
 
 - Nonprofit endowment accounts & fundraising marketplace
 - Emerging market crowdfunding 
-- Microlending (e.g. agricultural microloans in Myanmar)
+- Micro-lending (e.g. agricultural microloans in Myanmar)
 - Family, education, and charitable estate planning trusts
 - Impact funds (collective fundraising, investment, and grant-making)
 

@@ -15,9 +15,9 @@ Users can further set a variety of parameters to program their AST with no addit
 - Lock forever any of these parameters
 
 You don't need to be a blockchain expert to utilize ASTs. Communicating with smart contracts is as easy as any traditional API integration. Create your API request and configure your financial product in only a few minutes. Use our open-source components for your UI:
-- Wallet connect & dropdown
+- Wallet connect & drop-down
 - Cross-chain deposits
-- Registration flow & onboarding for your clients
+- Registration flow & on-boarding for your clients
 - Fully-fledged marketplace & user profiles
 - Management dashboard
 
@@ -25,4 +25,4 @@ You don't need to be a blockchain expert to utilize ASTs. Communicating with sma
 
 ![Integrate With Angel Protocol](../../assets/integrate-with-fintech.png "Integrate With Angel Protocol")
 
-With Angel Protocol you can build or embed the ability to invest in tokenized assets & yield, coordinate using decentralized governance, and program trustless execution in less than 60 minutes. We combine the best of tokenized infrastructure in one powerful but simple product, providing all the benefits of Web3 while abstracting away the complexity.
+With Angel Protocol you can build or embed the ability to invest in tokenized assets & yield, coordinate using decentralized governance, and program trust-less execution in less than 60 minutes. We combine the best of tokenized infrastructure in one powerful but simple product, providing all the benefits of Web3 while abstracting away the complexity.

@@ -1,5 +1,5 @@
 # Accounts Contract (Diamond)
-This diamond contract is where all of the core business logic that governs all ASTs lives. If you are unfamiliar with what a Diamond is please stop and read over the <a href="https://eips.ethereum.org/EIPS/eip-2535" target="_blank">EIP-2535 specification</a> to get an understanding and then come back here. Don’t worry we’ll wait! :) Everything else beyond this point will make a lot more sense after that.
+This diamond contract is where all of the core business logic that governs all ASTs lives. If you are unfamiliar with what a Diamond is please stop and read over the <a href="https://eips.ethereum.org/EIPS/eip-2535" target="_blank">EIP-2535 specification</a> to get an understanding and then come back here. Don’t worry we will wait! :) Everything else beyond this point will make a lot more sense after that.
 
 The Accounts contract is responsible for:
 - Tracking all existing Endowment accounts in the Angel Protocol ecosystem, their current status, and their configuration settings
