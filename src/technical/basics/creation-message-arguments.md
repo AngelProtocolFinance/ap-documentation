@@ -34,7 +34,7 @@ These fields are responsible for controlling when the AST Endowment will mature 
 
 If `withdrawBeforeMaturity == true`, then funds will be be able to be withdrawn before the maturity date, if set to false, then funds are locked until maturity is set (if ever). 
 
-The maturityTime field, if non-zero, sets the time that the Endowment will mature at. If `0` the endowment effectively has no maturity date (indefinate). 
+The maturityTime field, if non-zero, sets the time that the Endowment will mature at. If `0` the endowment effectively has no maturity date (indefinite).
 
 ## Categories and UN SDGs
 
@@ -47,7 +47,7 @@ struct Categories {
 }
 ```
 
-SDGs are used mostly with Charity endowments only, though they could be used by an AST if desired, though having at least 1 SDG set is not a requirement for them, unlike with Charity endowments. General categories is a open, flexible system thin which AST owners can set integer values on chain for interally defined categories. This General category might be useful for users that have many ASTs or those that have my sub-AST (child ASTs) that want to group them by internal classifiers. 
+SDGs are used mostly with Charity endowments only, though they could be used by an AST if desired, though having at least 1 SDG set is not a requirement for them, unlike with Charity endowments. General categories is a open, flexible system thin which AST owners can set integer values on chain for internally defined categories. This General category might be useful for users that have many ASTs or those that have my sub-AST (child ASTs) that want to group them by internal classifiers.
 
 ## Basic Endowment Info Strings
 

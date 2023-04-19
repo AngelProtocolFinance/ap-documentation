@@ -22,7 +22,7 @@ Funding your AST is easy, whether transferring in existing tokenized assets or d
 
 ### Withdrawal
 
-Withdrawals from your AST Liqiud balance can be done at any time, pending a confirmation vote from your AST multisig's managing wallets. Simply select the currency & account you’d like to withdraw from, then choose the destination network & wallet. 
+Withdrawals from your AST Liquid balance can be done at any time, pending a confirmation vote from your AST multisig's managing wallets. Simply select the currency & account you’d like to withdraw from, then choose the destination network & wallet.
 
 > The ability to withdraw directly to your bank account is being added soon!
 

@@ -6,7 +6,7 @@
 	<figcaption>Flow of events and summary of the contracts involved in the creation of an AST Endowment on the Accounts contract. This example sets up Endowment #2, with a single owner multisig that does not require explicit execution.</figcaption>
 </figure>
 
-Any user who wishes to do so may create an AST. To do so you must use the createEndowment function on the Accounts diamond contract facet “AccountsCreateEndowment”. This endpoint expects an extensive configuration message that lays out all of the settings and parameters for the new AST. We’ll cover the function itself and the logic the message arguments and what they are for. 
+Any user who wishes to do so may create an AST. To do so you must use the createEndowment function on the Accounts diamond contract facet “AccountsCreateEndowment”. This endpoint expects an extensive configuration message that lays out all of the settings and parameters for the new AST. We’ll cover the function itself and the logic the message arguments and what they are for.
 
 The `createEndowment` function payload on the Accounts contract facet `AccountsCreateEndowment` expects a single argument struct like so: 
 ```javascript
