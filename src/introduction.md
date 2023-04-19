@@ -10,13 +10,11 @@ An AST provides you with the tools to fund-raise, coordinate, and invest capital
 
 ## Who should read this book?
 
-In our humble opinion, everyone should read this. That said, there are certain areas that will be more relevant to certain readers.
+In our humble opinion, everyone should read this book! 😉 That said, there are certain areas which will be more relevant to different readers.
 
-If you are looking for a higher level overview of the Angel Protocol ecosystem you can check out that guide here [LINK]. We also provide a UI-focused guide for users that do not want or need to directly interact with the smart contracts and would prefer to use the provided web application for managing their AST.
+If you are _not_ technically inclined or you do not want or need to directly interact with the smart contracts and would prefer to use our provided web application for managing your AST, you should first read the [Functional Documentation](./functional/overview/main.md) chapters to get a complete understanding of what Angel Protocol is, what the ASTs can do, and how to work with the existing Angel Protocol website UI.
 
-If you are _not_ technically inclined, you should first read the [Functional Documentation](./functional/overview/main.md) chapters to get a complete understanding of what Angel Protocol is, what the ASTs can do, and how to work with the existing Angel Protocol website UI.
-
-If you _are_ technically savvy or just want to dive deeper then the [Technical Documentation](./technical/overview/main.md) chapters are for you. These were written primarily with developers and tech-savvy users in mind. It will help if you come in with an understanding of how the Polygon blockchain (or a similar EVM-based blockchain such as  Ethereum) and Solidity smart contracts work. We will be diving deeper into the technical aspects of how to use the Angel Protocol smart contracts directly here.
+If you _are_ technically savvy and need to work with the smart contracts directly or you just want to dive deeper, then the [Technical Documentation](./technical/overview/main.md) chapters are for you. These were written primarily with developers and tech-savvy users in mind. It will help if you come in with an understanding of how the Polygon blockchain (or a similar EVM-based blockchain such as  Ethereum) and Solidity smart contracts work. We will be diving deeper into the technical aspects of how to use the Angel Protocol smart contracts directly here.
 
 Regardless of the path you chose, there is a lot to learn in the coming pages that will help you better understand and use our platform. Stick with it and you might be surprised!
 
