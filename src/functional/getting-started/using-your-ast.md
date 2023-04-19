@@ -1,6 +1,6 @@
 # Using Your Angel Smart Treasury
 
-> **What You Will Learn:** 
+> **What You'll Learn:**
 > - Understanding of AST dashboard view
 > - Basics of using your new AST (Deposit/Withdrawal, Buy/Sell, Contributions, Maturity)
 
@@ -8,7 +8,7 @@
 
 ## AST Dashboard
 
-Your AST dashboard provides an overview of your total account balances and recent contributions. The left-hand menu allows you to easily navigate to relevant sections. We’ll begin by going over some basics before diving deeper into specific functionality. 
+Your AST dashboard provides an overview of your total account balances and recent contributions. The left-hand menu allows you to easily navigate to relevant sections. We will begin by going over some basics before diving deeper into specific functionality.
 
 ![admin-general-dashboard](../../assets/screenshots/admin-general-dashboard.png "admin-general-dashboard")
 

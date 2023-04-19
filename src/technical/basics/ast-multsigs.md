@@ -10,6 +10,6 @@ Once a transaction has collected signatures above the threshold, it can be execu
 
 ## Want to go deeper?
 
-If you're interested in learning more about multisig contracts in depth we can recommend the following articles and resources for additional reading:
+If you are interested in learning more about multisig contracts in depth we can recommend the following articles and resources for additional reading:
 - <a href="https://www.coindesk.com/learn/what-is-a-multisig-wallet/" target="_blank">What Is a Multisig Wallet? (Coindesk)</a> is a beginner friendly overview of multisig contracts
 - <a href="https://shivanisb10.medium.com/multisig-contracts-in-ethereum-ffd8a1a9a025" target="_blank">Multisig Contracts in Ethereum (Medium)</a> is a more advanced overview of multisig contracts in EMVs using Solidity with discussions around on-chain vs off-chain signing of transactions

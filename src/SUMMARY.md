@@ -26,7 +26,7 @@
 
 # 🧑‍💻 Technical Documentation
 
-- [Basics of Angel Protocol Contracts](./technical/overview/main.md)
+- [Angel Protocol Smart Contracts](./technical/overview/main.md)
 	- [Overview of Key Contracts](./technical/overview/overview-of-key-contracts.md)
 		- [Registrar Contract](./technical/overview/key-contracts-registrar.md)
 		- [Accounts Contract](./technical/overview/key-contracts-accounts.md) 

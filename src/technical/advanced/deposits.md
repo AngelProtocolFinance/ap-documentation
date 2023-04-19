@@ -18,8 +18,8 @@ function depositERC20(
 As you can see we would need to pass along the amount to deposit, the token address of the deposit token, and a `DepositRequest` struct. That struct is rather simple and provides the Accounts contract further information about splits the user desires and which Endowment ID to credit the deposit to. It looks like this:
 ```javascript
 struct DepositRequest {
-        uint256 id;
-        uint256 lockedPercentage;
-        uint256 liquidPercentage;
-    }
+    uint256 id;
+    uint256 lockedPercentage;
+    uint256 liquidPercentage;
+}
 ```

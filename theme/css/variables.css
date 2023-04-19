@@ -1,0 +1,146 @@
+/* Globals */
+:root {
+    --sidebar-width: 350px;
+    --page-padding: 15px;
+    --content-max-width: 750px;
+    --menu-bar-height: 50px;
+    --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
+    --code-font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
+    /* COLOR SCHEMES */
+    --orange: rgb(245, 151, 0);
+    --blue: #54A3D9;
+    --light-blue: rgb(226, 239, 249);
+    --grey: rgb(162, 163, 163); 
+    /* #aaaaaa for light-grey?? */
+    --text-light: rgb(68, 65, 60);
+    --text-dark: rgb(255, 255, 255);
+    --bg-primary-light: rgb(255 255 255);
+    --bg-primary-dark: rgb(18, 54, 79);
+    --bg-secondary-light: rgb(249 244 236);
+    --bg-secondary-dark: rgb(15, 46, 67);
+    --border-light: rgb(214, 214, 214);
+    --border-dark: rgb(61, 95, 118);
+    --table-alt-bg-light: rgb(214, 214, 214, 0.4);
+    --table-alt-bg-dark: rgb(61, 95, 118, 0.4);
+}
+
+/* Themes */
+.light {
+    --bg: var(--bg-primary-light);
+    --fg: var(--text-light);
+
+    --sidebar-bg: var(--bg-secondary-light);
+    --sidebar-fg: var(--text-light);
+    --sidebar-non-existant: var(--grey);
+    --sidebar-active: var(--orange);
+    --sidebar-spacer: var(--grey);
+
+    --scrollbar: var(--sidebar-fg);
+
+    --icons: var(--text-light);
+    --icons-hover: var(--orange);
+
+    --links: var(--blue);
+
+    --inline-code-color: #301900;
+
+    --theme-popup-bg: var(--bg-secondary-light);
+    --theme-popup-border: var(--border-light);
+    --theme-hover: #e6e6e6;
+
+    --quote-bg: var(--bg-secondary-light);
+    --quote-border: var(--border-light);
+
+    --table-border-color: var(--border-light);
+    --table-header-bg: var(--bg-secondary-light);
+    --table-alternate-bg: var(--table-alt-bg-light);
+
+    --searchbar-border-color: var(--border-light);
+    --searchbar-bg: var(--bg-secondary-light);
+    --searchbar-fg: var(--text-light);
+    --searchbar-shadow-color: #888;
+    --searchresults-header-fg: var(--text-light);
+    --searchresults-border-color: var(--border-light);
+}
+
+.navy {
+    --bg: var(--bg-primary-dark);
+    --fg: var(--text-dark);
+
+    --sidebar-bg: var(--bg-secondary-dark);
+    --sidebar-fg: var(--text-dark);
+    --sidebar-non-existant: var(--grey);
+    --sidebar-active: var(--orange);
+    --sidebar-spacer: var(--grey);
+
+    --scrollbar: var(--sidebar-fg);
+
+    --icons: var(--text-dark);
+    --icons-hover: var(--orange);
+
+    --links: var(--blue);
+
+    --inline-code-color: #c5c8c6;
+
+    --theme-popup-bg: var(--bg-secondary-dark);
+    --theme-popup-border: var(--border-dark);
+    --theme-hover: #1f2124;
+
+    --quote-bg: var(--bg-secondary-dark);
+    --quote-border: var(--border-dark);
+
+    --table-border-color: var(--border-dark);
+    --table-header-bg: var(--bg-secondary-dark);
+    --table-alternate-bg: var(--table-alt-bg-dark);
+
+    --searchbar-border-color: var(--border-dark);
+    --searchbar-bg: var(--bg-secondary-dark);
+    --searchbar-fg: var(--text-dark);
+    --searchbar-shadow-color: #aaa;
+    --searchresults-header-fg: var(--text-dark);
+    --searchresults-border-color: var(--border-dark);
+    --searchresults-li-bg: #2b2b2f;
+    --search-mark-bg: #355c7d;
+}
+
+@media (prefers-color-scheme: dark) {
+    .light.no-js {
+        --bg: var(--bg-primary-dark);
+        --fg: var(--text-dark);
+
+        --sidebar-bg: var(--bg-secondary-dark);
+        --sidebar-fg: var(--text-dark);
+        --sidebar-non-existant: var(--grey);
+        --sidebar-active: var(--orange);
+        --sidebar-spacer: var(--grey);
+
+        --scrollbar: var(--sidebar-fg);
+
+        --icons: var(--text-dark);
+        --icons-hover: var(--orange);
+
+        --links: var(--text-dark);
+
+        --inline-code-color: #c5c8c6;
+
+        --theme-popup-bg: var(--bg-secondary-dark);
+        --theme-popup-border: var(--border-dark);
+        --theme-hover: #1f2124;
+
+        --quote-bg: var(--bg-secondary-dark);
+        --quote-border: var(--border-dark);
+
+        --table-border-color: var(--border-dark);
+        --table-header-bg: var(--bg-secondary-dark);
+        --table-alternate-bg: var(--border-dark);
+
+        --searchbar-border-color: var(--border-dark);
+        --searchbar-bg: var(--bg-secondary-dark);
+        --searchbar-fg: var(--text-dark);
+        --searchbar-shadow-color: #aaa;
+        --searchresults-header-fg: var(--text-dark);
+        --searchresults-border-color: var(--border-dark);
+        --searchresults-li-bg: #2b2b2f;
+        --search-mark-bg: #355c7d;
+    }
+}

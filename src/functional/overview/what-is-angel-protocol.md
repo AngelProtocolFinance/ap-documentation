@@ -21,7 +21,7 @@ You don't need to be a blockchain expert to utilize ASTs. Communicating with sma
 - Fully-fledged marketplace & user profiles
 - Management dashboard
 
-> ⚠️ **Heads Up:** We have some great technical documentation if you want to go deeper, starting at [Technical Documentation - Introduction](../technical/introduction.md)
+> ⚠️ **Heads Up:** We have some great technical documentation if you want to go deeper. Start with an [Angel Protocol Smart Contracts](./../../technical/overview/main.md).
 
 ![Integrate With Angel Protocol](../../assets/diagrams/integrate-with-fintech.png "Integrate With Angel Protocol")
 

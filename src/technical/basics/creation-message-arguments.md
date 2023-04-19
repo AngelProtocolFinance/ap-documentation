@@ -56,15 +56,15 @@ string name;
 string logo;
 string image;
 ```
-These fields are simple, informational string vaules that will help identify your AST endowment on-chain and can be used by those who are not using suplemental database storages for AST information. 
+These fields are simple, informational string values that will help identify your AST endowment on-chain and can be used by those who are not using supplemental database storage for AST information.
 - Name: The name of your AST
 - Logo: A URL string that points to your AST’s logo image
-- Image: A URL string that points to your AST’s banner/suplemental image
+- Image: A URL string that points to your AST’s banner/supplemental image
 
 ## KYC Required
 
 `bool kycDonorsOnly;`
-If set to true, the AST is stating its preference for only recieving funds from KYC’d donors/contibutors. This is something that would be read by and enforced from the frontend environment, as there’s currently no real way to do this on-chain today.
+If set to true, the AST is stating its preference for only receiving funds from KYC’d donors/contributors. This is something that would be read by and enforced from the front-end environment, as there is currently no real way to do this on-chain today.
 
 ## MultiSig Initial Configs
 

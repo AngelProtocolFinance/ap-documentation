@@ -2,19 +2,19 @@
 
 ![nibi](../../assets/examples/nibi.png "nibi")
 
-### Corporate Social Responsibility in LATAM
+<div class="badge">Corporate Social Responsibility in LATAM</div>
 
-### About
+## About
 
 Nibi is a tech platform supporting over 250 grassroots Colombian nonprofits with marketing, fundraising, and capacity building. Nibi seeks to build trust in the burgeoning CSR space in LATAM while also opening up financial rails to seamlessly accept global donations.
 
-### Goals
+## Goals
 
 - Implement a smooth front-end API to increase donor and funder access globally in fiat and cryptocurrency
 - Transparently manage global donations for their respective clients
 - Demonstrate the benefits of an endowment for their grassroots nonprofit clients
 
-### Parameters
+## Parameters
 
 **Admin Wallet:**  Multi-sig set up consisting of four members from Nibi’s team. Each will have equal voting weight. Nibi will be the sole holder of all keys within the AST, as they will manage all financials for their clients.
 

@@ -6,4 +6,10 @@ src = "src"
 title = "AST Documentation | Angel Protocol"
 
 [output.html]
-additional-css  = ["section-lines.css"]
+additional-css  = ["custom.css"]
+default-theme = "light"
+preferred-dark-theme = "dark"
+git-repository-icon = "fa-github"
+git-repository-url = "https://github.com/AngelProtocolFinance/ap-documentation"
+edit-url-template = "https://github.com/AngelProtocolFinance/ap-documentation/edit/main/{path}"
+cname = "docs.angelprotocol.io"
