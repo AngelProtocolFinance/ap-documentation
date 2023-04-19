@@ -1,5 +1,7 @@
 # Introduction
 
+![angelprotocol-H-logo](./assets/angelprotocol-H-logo.svg "angelprotocol-H-logo")
+
 Welcome! I am excited you have decided to learn more about the Angel Smart Treasury (AST) from Angel Protocol. This document aims to help new develpers to understand the functionality and power offered by Angel Protocol’s smart contract platform so that they can quickly start building on top of us to deliver new and innovative financial solutions.
 
 ## ELI5: What is the purpose of an AST?
