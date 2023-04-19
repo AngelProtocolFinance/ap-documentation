@@ -1,6 +1,6 @@
 # Why we build
 
-> **What You Will Learn:** 
+> **What You'll Learn:**
 > - Angel Protocol’s foundation: Social impact
 > - Impact case studies
 > - Our Vision, Mission & Values

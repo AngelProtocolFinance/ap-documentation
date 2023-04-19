@@ -1,6 +1,6 @@
 # Creating Your Angel Smart Treasury
 
-> **What You Will Learn:** 
+> **What You'll Learn:**
 > - How to setup your wallet
 > - How to create your AST
 > - Setup options

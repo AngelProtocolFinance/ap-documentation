@@ -1,8 +1,8 @@
 # Introduction
 
-![angelprotocol-H-logo](./assets/angelprotocol-H-logo.svg "angelprotocol-H-logo")
+<img id="ap-logo" src="/assets/angelprotocol-H-logo.svg" alt="angelprotocol logo" />
 
-Welcome! I am excited you have decided to learn more about the Angel Smart Treasury (AST) from Angel Protocol. This document aims to help new developers to understand the functionality and power offered by Angel Protocol’s smart contract platform so that they can quickly start building on top of us to deliver new and innovative financial solutions.
+Welcome! I am excited you have decided to learn more about the Angel Smart Treasury (AST) from Angel Protocol. This book aims to help new developers to understand the functionality and power offered by Angel Protocol’s smart contract platform so that they can quickly start building on top of us to deliver new and innovative financial solutions.
 
 ## ELI5: What is the purpose of an AST?
 
@@ -16,7 +16,7 @@ If you are looking for a higher level overview of the Angel Protocol ecosystem y
 
 If you are _not_ technically inclined, you should first read the [Functional Documentation](./functional/overview/main.md) chapters to get a complete understanding of what Angel Protocol is, what the ASTs can do, and how to work with the existing Angel Protocol website UI.
 
-If you _are_ technically savvy or just want to dive deeper then the [Technical Documentation](./technical/overview/main.md) chapters are for you. These were written primarily with developers and tech-savvy users in mind. It will help if you come in with an understanding of how the Polygon blockchain (or a similar EVM-based blockchain such as  Ethereum) and Solidity smart contracts work. We’ll be diving deeper into the technical aspects of how to use the Angel Protocol smart contracts directly here.
+If you _are_ technically savvy or just want to dive deeper then the [Technical Documentation](./technical/overview/main.md) chapters are for you. These were written primarily with developers and tech-savvy users in mind. It will help if you come in with an understanding of how the Polygon blockchain (or a similar EVM-based blockchain such as  Ethereum) and Solidity smart contracts work. We will be diving deeper into the technical aspects of how to use the Angel Protocol smart contracts directly here.
 
 Regardless of the path you chose, there is a lot to learn in the coming pages that will help you better understand and use our platform. Stick with it and you might be surprised!
 
