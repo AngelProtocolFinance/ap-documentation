@@ -17,8 +17,6 @@ Tun Yat provides credit facilities for smallholder farmers with limited financin
 
 ## Parameters
 
-Tun Yat provides credit facilities for smallholder farmers with limited financing options in Myanmar. Servicing over 5,000 farmers to date Tun Yat is seeking to transparently scale their loan portfolio with the utmost capital efficiency.
-
 ![tun-yat-parameters](../../assets/examples/tun-yat-parameters.png "tun-yat-parameters")
 
 **Admin Wallet:**  Multi-sig set up consisting of three members from Tun Yat’s headquarters. Each will have equal voting weight. In the future, Village Committees receiving loans will be given admin wallet access and an equal vote for ongoing funding decisions. 

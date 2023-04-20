@@ -16,6 +16,8 @@ Nibi is a tech platform supporting over 250 grassroots Colombian nonprofits with
 
 ## Parameters
 
+![nibi-parameters](../../assets/examples/nibi-parameters.png "nibi-parameters")
+
 **Admin Wallet:**  Multi-sig set up consisting of four members from Nibi’s team. Each will have equal voting weight. Nibi will be the sole holder of all keys within the AST, as they will manage all financials for their clients.
 
 **Admin Settings:** 75% (3/4) vote for execution, 72 hours for voting window, and auto execution on.

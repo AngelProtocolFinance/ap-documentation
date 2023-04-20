@@ -16,6 +16,8 @@ SOWE and their field partner Yamba Hearts for Uganda empower women to start thei
 
 ## Parameters
 
+![sowe-parameters](../../assets/examples/sowe-parameters.png "sowe-parameters")
+
 **Admin Wallet:** Multi-sig set up consisting of three members from SOWE’s team and two members from Yamba Hearts for Uganda. As the Yamba Hearts for Uganda team works directly with the loan applicants, their vote will be weighted 2:1 compared to SOWE’s team.
 
 **Admin Settings:** Approximately 57% (4/7) vote for execution, 72 hours for voting window, and auto execution on.
